@@ -23,7 +23,7 @@ while True:
         my_dict[name.lower()] = new_my_dict
         with open(filename, "w") as file:
             json.dump(my_dict,file)
-        print("Name: ", new_my_dict["Name"])
+        print("Successful!")
     if user == "2":
         with open(filename, "r") as file:
             user_data = json.load(file)
